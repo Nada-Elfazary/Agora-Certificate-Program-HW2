@@ -1,0 +1,82 @@
+<html>
+    <head>
+    <title>Agora Login Page HW 2</title>
+    <link rel="stylesheet" href="style2.css"/>
+    </head>
+
+    <body>
+
+        <div id = "calc">
+            <center><h1 id ="title">CALCULATOR</h1></center>
+
+            <div id = "body">
+            <input type="text" id="firstNo"/>
+            <input type="text" id="secondNo"/>
+
+            <br>
+
+            <button id="add" onclick="add()">Add</button>
+            <button id="subtract" onclick="subtract()">Subtract</button>
+            <button id="multiply" onclick="multiply()">Multiply</button>
+            <button id="divide" onclick="divide()">Divide</button>
+            
+            <br>
+            
+            <input type="text" id="result"/>
+
+            </div>
+
+        </div>
+        
+    
+
+    </body>
+
+    <script>
+
+        function add() {
+            let firstNumber = parseFloat(document.getElementById("firstNo").value)
+
+            let secondNumber = parseFloat(document.getElementById("secondNo").value)
+
+            let sum = firstNumber + secondNumber;
+            
+            document.getElementById("result").value = sum
+        }
+
+        function subtract() {
+
+            let firstNumber = document.getElementById("firstNo").value
+
+            let secondNumber = document.getElementById("secondNo").value
+
+            let difference = firstNumber - secondNumber;
+
+            document.getElementById("result").value = difference
+        }
+        
+
+        function multiply() {
+
+            let firstNumber = document.getElementById("firstNo").value
+
+            let secondNumber = document.getElementById("secondNo").value
+
+            let product = firstNumber * secondNumber;
+            
+            document.getElementById("result").value = product
+        }
+        
+
+        function divide() {
+
+            let firstNumber = document.getElementById("firstNo").value
+
+            let secondNumber = document.getElementById("secondNo").value
+
+            let quotient = firstNumber / secondNumber;
+
+            document.getElementById("result").value = quotient
+        }
+    </script>
+</html>
